@@ -5,7 +5,8 @@
 </head>
 <body>
 
-<h1>For all your journaling needs.</h1>
+<h1>Petal For Your Thoughts.</h1>
+<h2>For all your journaling needs.</h2>
 
 
 </body>
