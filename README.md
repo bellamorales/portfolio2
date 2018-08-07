@@ -40,11 +40,11 @@ body, html {
 }
 
 #Home {background-image: url("https://wallpapertag.com/wallpaper/full/5/b/3/833297-amazing-sunflower-backgrounds-1920x1080.jpg");}
-#Account{background-image: url("http://www.hdflowerwallpaper.com/wallpaper/2015/09/yellow-flowers-tumblr-11-free-hd-wallpaper.jpg");}
+#Account{background-image: url("https://i.pinimg.com/736x/ed/ef/dd/edefddc75fa35eb8a5e95c45fde6edb2.jpg");}
 #Journal {background-image: url("https://78.media.tumblr.com/32ca9713c62c5319eb237629e80b527f/tumblr_nbhmwc7ELb1rxmkxeo1_500.jpg");}
 #Prompts {background-image: url("https://cdn.pixabay.com/photo/2018/05/28/12/09/flowers-3435882_960_720.jpg");}
-#Tips {background-color: orange;}
-#Goals {background-color: orange;}
+#Tips {background-image: url("https://data.whicdn.com/images/307385940/large.jpg");}
+#Goals {background-image: url("https://78.media.tumblr.com/e8aae3dbbecfd8bad0ec6f31c75d35b3/tumblr_o5q5q5qWas1ump72zo1_1280.png");}
 </style>
 </head>
 <body>
