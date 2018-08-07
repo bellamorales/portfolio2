@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -67,7 +68,18 @@ body, html {
   <h3>Account</h3>
   <p>Get in touch, or swing by for a cup of coffee.</p>
 </div>
+<div id="login-box">
+      <input type="submit" name="signup-button" value="Sign Up"/>
+      <input type="submit" name="signup-button" value="Sign Up"/>
 
+      <input type="submit" name="signup-button" value="Sign Up"/>
+      <input type="submit" name="signup-button" value="Sign Up"/>
+      <input type="submit" name="signup-button" value="Sign Up"/>
+
+      <input type="submit" name="signup-button" value="Sign Up"/>
+
+      <input type="submit" name="signup-button" value="Sign Up"/>
+      
 <div id="Journal" class="tabcontent">
   <center><h1><font size="30">Journal</font></h1></center>
   <p><font size="6">Title: </font></p>
