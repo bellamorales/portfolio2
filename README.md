@@ -87,14 +87,25 @@ body, html {
 </div>
 
 <div id="Prompts" class="tabcontent">
-  <h3>Prompts</h3>
-  <p>Some news this fine day!</p>
-</div>
+  <center>
+  <h1>Prompts</h1>
+  <p>Don't know what to write? Click on the button to get a prompt!</p
+  </center>
+ <div id="quoteDisplay"> </div>
+ <button onclick ="Prompts()">New Prompt</button>
+ <script src = "prompt.js"></script>
+  </div>
 
 <div id="Tips" class="tabcontent">
-  <h3>Tips and Tricks</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
+  <center>
+  <h1>Tips and Tricks</h1>
+  <p>1. Get to the point </p>
+  <p>2. Read it outloud if you want to pick up on mistakes. </p>
+  <p>3. When writing a fictional story, set up a clear plot.</p>
+  <p>4. Can't seem to fall asleep? Write your thoughts out to clear your mind.</p>
+  <p>5. Write everyday. Practice makes perfect.</p>
 </div>
+</center>
 
 <div id="Goals" class="tabcontent">
   <h3>Goals</h3>
