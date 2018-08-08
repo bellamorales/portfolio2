@@ -11,7 +11,34 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Sofia; font-size: 40px;
+
 }
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-family: Sofia;
+    font-size:100px;
+}
+.centeredx{
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  color:black;
+  font-family: Sofia;
+  font-size:60px;
+
+}
+img {
+    display: block;
+    float:left;
+    padding-top: 0px;
+
+}
+
 
 /* Style tab links */
 .tablink {
@@ -40,6 +67,7 @@ body, html {
 }
 
 
+
 textarea{
   color:white;
   background: transparent;
@@ -51,10 +79,10 @@ textarea{
   color:white;
   background-image:"notebook2.jpg";
   border:none;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 24px;
+  font-family: Sofia;
   position: absolute;
-  top:62%;
+  top:60%;
   left:7%;
   transform: translate(-60%, - 60%);
 }
@@ -62,10 +90,10 @@ textarea{
   color:white;
   background: transparent;
   border:none;
-  font-size: 16px;
-  font-family: cursive;
+  font-size: 20px;
+  font-family: Sofia;
   position: absolute;
-  top:90%;
+  top:80%;
   left:2%;
   transform: translate(-60%, - 60%);
 
@@ -74,10 +102,10 @@ textarea{
   color:white;
   background: transparent;
   border:none;
-  font-size: 16px;
-  font-family: cursive;
+  font-size: 24px;
+  font-family: Sofia;
   position: absolute;
-  top:80%;
+  top:71%;
   left:7%;
   transform: translate(-60%, - 60%);
 
@@ -89,8 +117,9 @@ textarea{
 #Home {background-image: url("https://wallpapertag.com/wallpaper/full/5/b/3/833297-amazing-sunflower-backgrounds-1920x1080.jpg");}
 #Account{background-image: url("http://www.hdflowerwallpaper.com/wallpaper/2015/09/yellow-flowers-tumblr-11-free-hd-wallpaper.jpg");}
 #Account{background-image: url("https://i.pinimg.com/736x/ed/ef/dd/edefddc75fa35eb8a5e95c45fde6edb2.jpg");}
-#Journal {background-color:blue;
-width:1350px; height:2000px;}
+#Journal{background-image: url("background2.jpg");
+width:1350px; height:2000px;
+}
 #Prompts {background-image: url("https://cdn.pixabay.com/photo/2018/05/28/12/09/flowers-3435882_960_720.jpg");}
 #Tips {background-color: orange;}
 #Goals {background-color: orange;}
@@ -119,12 +148,13 @@ width:1350px; height:2000px;}
   <p>Get in touch, or swing by for a cup of coffee.</p>
 </div>
 
-<div id="Journal" class="tabcontent" >
-  <center><h1><font size="50">Journal</font></h1></center>
-  <p><font size="6">Title: </font></p>
-  <textarea class="title" rows="3" cols="50">
+<div id="Journal" class="tabcontent"  >
+  <img class="image" src="notebook2.jpg" width="1300"height="1800">
+  <div class="centered"><center><h1><font size="50">Journal</font></h1></center></div>
+  <div class="centeredx"><font size="6">Title: </font></div>
+  <textarea class="title" rows="2" cols="50">
   </textarea>
-  <p><font size="6">Date: </font></p>
+  <p class="centeredx"><font size="6">Date: </font></p>
   <textarea class="date" rows="2" cols="25">
   </textarea>
   <div>
@@ -132,6 +162,9 @@ width:1350px; height:2000px;}
     Type here
     </textarea>
   <div>
+
+  </div>
+
 
 </div>
 
