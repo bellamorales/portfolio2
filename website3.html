@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
-
 /* Set height of body and the document to 100% */
 body, html {
     height: 100%;
     margin: 0;
     font-family: Sofia; font-size: 30px;
 }
+
 .sign{
   position: absolute;
   top: 5%;
@@ -20,7 +20,6 @@ body, html {
   color:black;
   font-family: Sofia;
   font-size:60px;
-
 }
 /* Style tab links */
 .tablink {
@@ -33,7 +32,7 @@ body, html {
     font-family: Sofia;
     padding: 14px 16x;
     font-size: 17px;
-    width: 16.65%;
+    width: 16.64%;
 }
 .left-box
 {
@@ -84,13 +83,9 @@ input[type="submit"]:focus
   background: #ff5722;
   transition: o.2s ease;
 }
-
-
-
 .tablink:hover {
     background-color: #777;
 }
-
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
     color: white;
@@ -107,6 +102,17 @@ input[type="submit"]:focus
     font-family: Sofia;
     font-size:100px;
 }
+.link{
+  color:white;
+  background: transparent;
+  border:none;
+  font-size: 10px;
+  font-family: cursive;
+  position: absolute;
+  top:80%;
+  left:2%;
+  transform: translate(-60%, - 60%);
+}
 .centeredx{
   position: absolute;
   top: 62%;
@@ -115,7 +121,6 @@ input[type="submit"]:focus
   color:black;
   font-family: Sofia;
   font-size:60px;
-
 }
 .centery{
   position: absolute;
@@ -125,7 +130,6 @@ input[type="submit"]:focus
   color:black;
   font-family: Sofia;
   font-size:60px;
-
 }
 .centermail{
   position: absolute;
@@ -162,12 +166,10 @@ input[type="submit"]:focus
   color:black;
   font-family: Sofia;
 }
-
 img {
     display: block;
     float:left;
     padding-top: 0px;
-
 }
 .title{
   color:white;
@@ -187,10 +189,9 @@ img {
   font-size: 20px;
   font-family: Sofia;
   position: absolute;
-  top:80%;
+  top:85%;
   left:2%;
   transform: translate(-60%, - 60%);
-
 }
 .date{
   color:white;
@@ -202,12 +203,142 @@ img {
   top:71%;
   left:7%;
   transform: translate(-60%, - 60%);
-
-**//code for menu
 }
-.sidebar{
-  position:absolute;
-  left:230px
+* {
+  box-sizing: border-box;
+}
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  color:black;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(even) {
+  background: #f4e436;
+}
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #f4e436;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover {
+  background-color: #f4e436;
+  color: white;
+}
+/* Style the header */
+.header {
+  background-color: #f4e436;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addBtn:hover {
+  background-color: #f4e436;
+}
+#myProgress {
+  width: 100%;
+  background-color: #F1EEE6;
+  margin-top: 100px;
+}
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#Home {background-image: url("https://wallpapertag.com/wallpaper/full/5/b/3/833297-amazing-sunflower-backgrounds-1920x1080.jpg");}
+#Account{background-image: url("account.jpg");
+width:1350px; height:600px;}
+#Journal {background-image: url("background2.jpg");
+width:1350px; height:2000px;}
+#Prompts {background-image: url("https://cdn.pixabay.com/photo/2018/05/28/12/09/flowers-3435882_960_720.jpg");}
+#Tips {background-image: url("https://www.xmple.com/wallpaper/yellow-gradient-red-linear-1920x1080-c2-feeb10-fe4010-a-240-f-14.svg");}
+#Goals {background-color:#f4e436;width:1350px; height:2000px;}
+#login-box
+{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 600px;
+  height:400px;
+  transform: translate(-50%, -50%);
+  color:black;
+  font-family: Sofia;
+  background-image: url("https://i.pinimg.com/736x/ed/ef/dd/edefddc75fa35eb8a5e95c45fde6edb2.jpg");
+  color:blue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 .sidenav {
     height: 100%;
@@ -215,7 +346,7 @@ img {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -243,49 +374,20 @@ img {
     margin-left: 50px;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: .1px;
-
-}
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-#Home {background-image: url("https://wallpapertag.com/wallpaper/full/5/b/3/833297-amazing-sunflower-backgrounds-1920x1080.jpg");}
-#Account{background-image: url("account.jpg");
-width:1350px; height:600px;}
-#Journal {background-image: url("background2.jpg");
-width:1350px; height:2000px;}
-#Prompts {background-image: url("https://cdn.pixabay.com/photo/2018/05/28/12/09/flowers-3435882_960_720.jpg");}
-#Tips {background-image: url("https://www.xmple.com/wallpaper/yellow-gradient-red-linear-1920x1080-c2-feeb10-fe4010-a-240-f-14.svg");}
-#Goals {background-image: url("https://78.media.tumblr.com/e8aae3dbbecfd8bad0ec6f31c75d35b3/tumblr_o5q5q5qWas1ump72zo1_1280.png");}
-#login-box
-{
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  width: 600px;
-  height:400px;
-  transform: translate(-50%, -50%);
-  color:black;
-  font-family: Sofia;
-  background-image: url("https://i.pinimg.com/736x/ed/ef/dd/edefddc75fa35eb8a5e95c45fde6edb2.jpg");
-  color:blue;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
 </style>
 </head>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/aboutus.html">About Us</a>
+  <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/help.html">Help</a>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/aboutus.html">About Us</a>
-    <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/help.html">Help</a>
+</div>
 
-  </div>
 
 
 <div id="main">
@@ -310,15 +412,14 @@ function closeNav() {
 <button class="tablink" onclick="openPage('Tips', this, 'orange')">Tips</button>
 <button class="tablink" onclick="openPage('Goals', this, 'orange')">Goals</button>
 
-
 <div id="Home" class="tabcontent">
 <center>
   <h1>Petal for Your Thoughts</h1>
   <h2>For all your journaling needs</h2>
 </center>
+
 </div>
-
-
+</div>
 
 <div id="Account" class="tabcontent">
   <div id="login-box">
@@ -345,14 +446,15 @@ function closeNav() {
   <textarea class="date" rows="2" cols="25">
   </textarea>
   <div class="link"><center><font size="4"><a href="https://goo.gl/forms/EhtOYSkszKx3zjMi2">Click this to write more entries and save them.</a></font></center></div>
-    <textarea class= "write" rows="60" cols="140" >
+    <textarea class= "write" rows="45" cols="125" >
       Type here
     </textarea>
 
   </div>
- </div>
+</div>
+</div>
 
-
+</div>
 
 <div id="Prompts" class="tabcontent">
   <center>
@@ -363,6 +465,8 @@ function closeNav() {
  <button onclick ="Prompts()">New Prompt</button>
  <script src = "prompt.js"></script>
   </div>
+</div>
+
 
 <div id="Tips" class="tabcontent">
   <center>
@@ -376,8 +480,92 @@ function closeNav() {
 </center>
 
 <div id="Goals" class="tabcontent">
-  <h3>Goals</h3>
-  <p>Who we are and what we do.</p>
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">GOALS</h2>
+    <input type="text" id="myInput" placeholder="Set your GOALS...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    <div id="myProgress">
+        <div id="myBar">10%</div>
+    </div>
+  </div>
+
+
+  <ul id="myUL">
+    <li>exercise for 30days</li>
+    <li>study for ACT everyday</li>
+    <li>stop procrastinating</li>
+    <li>finish homework</li>
+    <li>Read a book</li>
+    <li>work on your final project</li>
+  </ul>
+  <script>
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("LI");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+      move();
+    }
+  }, false);
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+      document.getElementById("myInput").value = "";
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+  function move() {
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+        elem.innerHTML = width * 1  + '%';
+      }
+    }
+  }
+  </script>
+
 </div>
 
 <script>
@@ -393,13 +581,11 @@ function openPage(pageName,elmnt,color) {
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
-
 }
-
+// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
 </script>
 
-
-
-
+</body>
 </html>
