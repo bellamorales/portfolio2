@@ -8,20 +8,20 @@
 * {box-sizing: border-box}
 /* Set height of body and the document to 100% */
 * { cursor: url(sun.cur), default;}
-
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 * {
-  margin: 0;
-  padding: 0;
- }
- .imgbox {
-  display: grid;
-  height: 100%;
- }
- .center-fit {
-  max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
- }
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
 
 body, html {
     background-image: url("https://www.studiofmp.com/wp-content/uploads/2018/4/flora-aesthetic-tumblr.png");
@@ -38,25 +38,32 @@ h2 {
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
+h3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .container {
-    position: relative;
+    position: fixed;
     width: 100%;
     max-width: 400px;
 }
-
 .container img {
     width: 100%;
     height: auto;
 }
-
 .container .btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
+    background-color: #ff4cde;
+    color: pink;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
@@ -64,41 +71,44 @@ h2 {
     border-radius: 5px;
     text-align: center;
 }
-
 .container .btn:hover {
     background-color: black;
 }
-
 </style>
 
 </head>
 <body>
 <center>
 <h1 style="color:white">How Are You Feeling Today?</h1>
-<h2>What is your mood now:</h2>
+<h2>What is your mood now.</h2>
+<h3>Click a button to get an encouraging quote:</h3>
 </center>
-
-<div class="container">
-  <img src="good.png" alt="good" style="width:20%">
-  <button onclick="myFunction2()">Click me</button>
-  <p id="demo2"></p>
+<center>
+<div class="row">
+  <div class="column">
+    <img src="good.png" alt="good" style="width:20%">
+    <button onclick="myFunction2()">Click me</button>
+    <p id="demo2"></p>
 </div>
- <div class="container">
-   <img src="smile.png" alt="Smile" style="width:20%">
-  <button onclick="myFunction()">Click me</button>
-  <p id="demo"></p>
-  <div>
-  <div class="container">
-    <img src="sad.png" alt="sad" style="width:20%">
+<div class="row">
+  <div class="column">
+  <img src="smile.png" alt="Smile" style="width:20%">
     <button onclick="myFunction3()">Click me</button>
     <p id="demo3"></p>
-  <div>
-   <div class="container">
-     <img src=" awful.png" alt="awful" style="width:20%">
-     <button onclick="myFunction4()">Click me</button>
+  </div>
+<div class="row">
+  <div class="column">
+      <img src="sad.png" alt="sad" style="width:20%">
+       <button onclick="myFunction4()">Click me</button>
      <p id="demo4"></p>
-  <div>
-
+   </div>
+  <div class="row">
+   <div class="column">
+     <img src=" awful.png" alt="awful" style="width:20%">
+     <button onclick="myFunction()">Click me</button>
+     <p id="demo"></p>
+</div>
+</center>
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "Laugh as much as you breath and love as long as you live.";
