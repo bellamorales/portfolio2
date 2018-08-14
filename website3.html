@@ -6,12 +6,24 @@
 <style>
 * {box-sizing: border-box}
 /* Set height of body and the document to 100% */
+* { cursor: url(sun.cur), default;}
 body, html {
     height: 100%;
     margin: 0;
     font-family: Sofia; font-size: 30px;
 }
-
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+h3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
 .sign{
   position: absolute;
   top: 5%;
@@ -318,6 +330,7 @@ input {
   line-height: 30px;
   color: white;
 }
+
 #Home {background-image: url("https://wallpapertag.com/wallpaper/full/5/b/3/833297-amazing-sunflower-backgrounds-1920x1080.jpg");}
 #Account{background-image: url("account.jpg");
 width:1350px; height:600px;}
@@ -385,8 +398,7 @@ width:1350px; height:2000px;}
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/aboutus.html">About Us</a>
   <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/help.html">Help</a>
-
-</div>
+  <a href="file:///C:/Users/KARMAM04/Documents/GWC2018/otherlinks.html">Other Resources</a>
 
 
 
@@ -459,7 +471,7 @@ function closeNav() {
 <div id="Prompts" class="tabcontent">
   <center>
   <h1>Prompts</h1>
-  <p>Don't know what to write? Click on the button to get a prompt!</p
+  <h3>Don't know what to write?Click on the button to get a prompt!</h3
   </center>
  <div id="quoteDisplay"> </div>
  <button onclick ="Prompts()">New Prompt</button>
