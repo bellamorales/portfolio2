@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ff4cde;
+    color: pink;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+body {
+        background-color: #ffff4c;
+    }
+</style>
+</head>
+<body>
+
+<h1>How Are You Feeling Today?</h1>
+<p>What is your mood now:</p>
+
+<div class="row">
+  <div class="column">
+      <img src="good.png" alt="good" style="width:20%">
+      <button onclick="myFunction2()">Click me</button>
+    <p id="demo2"></p>
+  </div>
+<div class="row">
+  <div class="column">
+  <img src="smile.png" alt="Smile" style="width:20%">
+    <button onclick="myFunction3()">Click me</button>
+    <p id="demo3"></p>
+  </div>
+<div class="row">
+  <div class="column">
+      <img src="sad.png" alt="sad" style="width:20%">
+       <button onclick="myFunction4()">Click me</button>
+     <p id="demo4"></p>
+   </div>
+  <div class="row">
+   <div class="column">
+     <img src=" awful.png" alt="awful" style="width:20%">
+     <button onclick="myFunction()">Click me</button>
+     <p id="demo"></p>
+<div>
+
+  <script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Laugh as much as you breath and love as long as you live.";
+  }
+
+  function myFunction2() {
+    document.getElementById("demo2").innerHTML = "Be you. Find you. Be happy with that!";
+  }
+
+  function myFunction3() {
+    document.getElementById("demo3").innerHTML = "We need to learn to love ourselves first, in all our glory and imperfections.";
+  }
+
+  function myFunction4() {
+    document.getElementById("demo4").innerHTML = "Don't Let The World Wear You Down.";
+  }
+
+
+  </script>
+
+  </body>
+  </html>
+
+
+
+
+</div>
+
+</body>
+</html>
