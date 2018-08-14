@@ -44,7 +44,7 @@ h3 {
     font-family: Sofia;
     padding: 14px 16x;
     font-size: 17px;
-    width: 16.64%;
+    width: 20%;
 }
 .left-box
 {
@@ -338,7 +338,6 @@ width:1350px; height:600px;}
 width:1350px; height:2000px;}
 #Prompts {background-image: url("https://cdn.pixabay.com/photo/2018/05/28/12/09/flowers-3435882_960_720.jpg");}
 #Tips {background-image: url("https://www.xmple.com/wallpaper/yellow-gradient-red-linear-1920x1080-c2-feeb10-fe4010-a-240-f-14.svg");}
-#Goals {background-color:#f4e436;width:1350px; height:2000px;}
 #login-box
 {
   position: absolute;
@@ -428,7 +427,7 @@ function closeNav() {
 <button class="tablink" onclick="openPage('Journal', this, 'orange')">Journal</button>
 <button class="tablink" onclick="openPage('Prompts', this, 'orange')">Prompt</button>
 <button class="tablink" onclick="openPage('Tips', this, 'orange')">Tips</button>
-<button class="tablink" onclick="openPage('Goals', this, 'orange')">Goals</button>
+
 
 <div id="Home" class="tabcontent">
 <center>
@@ -497,25 +496,7 @@ function closeNav() {
 </div>
 </center>
 
-<div id="Goals" class="tabcontent">
-  <div id="myDIV" class="header">
-    <h2 style="margin:5px">GOALS</h2>
-    <input type="text" id="myInput" placeholder="Set your GOALS...">
-    <span onclick="newElement()" class="addBtn">Add</span>
-    <div id="myProgress">
-        <div id="myBar">10%</div>
-    </div>
-  </div>
 
-
-  <ul id="myUL">
-    <li>exercise for 30days</li>
-    <li>study for ACT everyday</li>
-    <li>stop procrastinating</li>
-    <li>finish homework</li>
-    <li>Read a book</li>
-    <li>work on your final project</li>
-  </ul>
   <script>
   // Create a "close" button and append it to each list item
   var myNodelist = document.getElementsByTagName("LI");
